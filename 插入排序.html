@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>插入排序-确定第一个有序，向有序比较</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <script>
+            var a =[6,5,2,3,1,7,0];
+            console.log(a);
+            for ( var i=0; i<a.length-1; i++) {
+                for ( var j=i+1; j>0; j--) {
+                    if ( a[j] < a[j-1] ) {
+                        [ a[j], a[j-1] ] = [ a[j-1],a[j]]
+                    }
+                    else {
+                        break;
+                    }
+                }
+            }
+            console.log(a);
+        </script>
+    </body>
+</html>
